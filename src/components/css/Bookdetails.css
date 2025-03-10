@@ -1,0 +1,41 @@
+.book-details{
+    padding-right: 5rem; 
+    width: 45%;
+    height: 70%;
+    padding-left: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.book-cover{
+    border-radius: none;
+    width: 20%;
+    margin-top: 30px;
+    margin-left: 50%;
+    padding: 5px;
+    padding-bottom: 30px;
+}
+.price-buy{
+    width: 40%;
+    padding-right: 5rem; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.prices-discount{
+    padding: 10px;
+    display: flex;
+    align-items: center;    
+}
+.buy-now{
+    padding: 10px;
+    width: 100%;
+    margin-left:75px;
+}
+.total-pay{
+    padding: 10px;
+    font-size: 23px;
+    height: 5px;
+    margin-top: 75px;
+    margin-left: 20px;
+}

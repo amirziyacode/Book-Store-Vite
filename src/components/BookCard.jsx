@@ -1,6 +1,6 @@
 import React from "react";
 import { FiStar,FiShoppingCart} from 'react-icons/fi';
-import "../css/BookCard.css"
+import "./css/BookCard.css"
 
 const  BookCard = ({book}) => {
     const { title, author, cover, price, rating, discount } = book; 
