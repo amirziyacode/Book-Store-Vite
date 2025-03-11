@@ -85,6 +85,14 @@ function Bookdetails(){
                     </div>
                 </div>
         </div>
+        <div className="descp-book">
+            <div className="Preface">
+                <p style={{marginLeft:"15px",color:"white",}}>Preface</p> 
+            </div>
+            <div className="about-book">
+                <p style={{letterSpacing:'1px',wordSpacing:"1px",fontSize:"18px"}}>{book.descripation}</p>    
+            </div>    
+        </div>
         </>
     )
 }
