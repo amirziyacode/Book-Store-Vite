@@ -11,8 +11,9 @@ function Aboutus(){
                     <div className="about-icons">
                         <a href="https://www.instagram.com/amirziya.py?igsh=empvOWp6ZncwbHU5"><FaInstagram className="instagram"/></a>
                         <a href="https://github.com/amirziyacode"><FaGithub className="github"/></a>
-                        <a href="https://www.linkedin.com/in/amir-ali-ziya-zadeh-19161b248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"></a>
-                        <FaLinkedin className="linkdin"/>
+                        <a href="https://www.linkedin.com/in/amir-ali-ziya-zadeh-19161b248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                            <FaLinkedin className="linkdin"/>
+                        </a>
                        <a href="mailto:amz.python@gmail.com"><MdEmail className="email"/></a> 
                     </div>
                 </div>
