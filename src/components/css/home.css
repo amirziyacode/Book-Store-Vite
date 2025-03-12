@@ -99,13 +99,7 @@ h2{
     color: white;
     cursor: pointer;
 }
-li:hover{
-    color:black;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-decoration-color:red;
-    cursor: pointer;
-}
+
 .logo:hover{
     cursor: pointer;
 }

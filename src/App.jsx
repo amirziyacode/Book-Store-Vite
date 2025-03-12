@@ -5,6 +5,7 @@ import Login from './components/Login';
 import SingUp from './components/SignUp';
 import Bookdetails from './components/Bookdetails';
 import Bookstore from './components/BookStore';
+import Aboutus from './components/Aboutus';
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         <Route>
           <Route path="/login" element={<Login/>} />
           <Route path='/singUp' element={<SingUp/>}/>
-          <Route path="/bookDetails" element={<Bookdetails/>}/>
-          <Route path='/bookstore' element={<Bookstore/>}/>
+          <Route path="/Bookdetails" element={<Bookdetails/>}/>
+          <Route path='/BookStroes' element={<Bookstore/>}/>
+          <Route path='/About Us' element={<Aboutus/>}/>
           <Route index element={<Home/>} />
         </Route>
       </Routes>

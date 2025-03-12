@@ -18,3 +18,10 @@ li{
     font-size: 18px;
     color: gray;
 }
+li:hover{
+    color:black;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color:red;
+    cursor: pointer;
+}

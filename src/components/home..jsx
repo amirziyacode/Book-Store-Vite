@@ -21,7 +21,7 @@ function Home() {
                 <button className="btn-primary">
                     Get Started
                 </button>
-                <button onClick={() => navigate('/bookstore')} className="btn-primary-outline">
+                <button onClick={() => navigate('/login')} className="btn-primary-outline">
                     Discover
                 </button>
             </div>

@@ -1,20 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/navbar.css";
 import { useNavigate } from 'react-router-dom';
 
 function NavBar(){
     const navigate = useNavigate();
+    const nav_button = ["BookStroes","Shop","About Us","Contact us"];
+    const [navchange,setNavchange] = useState('');
+
     return (
         <>
         <div className="nav-bar">
-            <h2 className="logo" onClick={() => navigate('/')}><span style={{color:"red"}}>Book</span>Store</h2>
+            <h2 className="logo" onClick={() => {navigate('/'),setNavchange("")}}><span style={{color:"red"}}>Book</span>Store</h2>
             <ul className="nav-ite">
-                <li onClick={() => navigate('/bookstore')}>BookStroes</li>
-                <li onClick={() =>  navigate('/login')}>Shop</li>
-                <li>About Us</li>
-                <li>Contact us</li>
+                {nav_button.map(navbtn => (
+                    <li
+                        key={navbtn}
+                        onClick={() => { setNavchange(navbtn),navigate(navbtn) }}
+                        style={navchange === navbtn ?{color:"black",textDecoration:"underline",textDecorationColor:"red",textDecorationThickness:"3px"} : {color:"#374151",}}
+                        >
+                        {navbtn}
+                    </li>
+                ))}
             </ul>
-            <button class="btn-outline" onClick={() => navigate('/SingUp')}><p class="text-btn">Sing Up</p></button>
+            <button class="btn-outline" onClick={() => {setNavchange(''),navigate('/SingUp')}}><p class="text-btn">Sing Up</p></button>
         </div>
         </>
     )
