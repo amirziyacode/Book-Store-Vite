@@ -6,6 +6,7 @@ import SingUp from './components/SignUp';
 import Bookdetails from './components/Bookdetails';
 import Bookstore from './components/BookStore';
 import Aboutus from './components/Aboutus';
+import Contactus from './components/Contactus';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/Bookdetails" element={<Bookdetails/>}/>
           <Route path='/BookStroes' element={<Bookstore/>}/>
           <Route path='/About Us' element={<Aboutus/>}/>
+          <Route path="/Contact us" element={<Contactus/>}/>
           <Route index element={<Home/>} />
         </Route>
       </Routes>
