@@ -33,20 +33,24 @@
     width: 40px;
     height: 40px;
     padding: 10px;
+    color: black;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 .linkdin{
     width: 40px;
     padding: 10px;
     height: 40px;
     color: #0a66c2;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 .email{
     width: 40px;
     height: 40px;
     color:#F59E0B;
     padding: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
-.instagram:hover{
+.instagram:hover , .github:hover , .linkdin:hover,.email:hover{
     transform: scale(1.1); 
     filter: brightness(1.2); 
     cursor: pointer;
