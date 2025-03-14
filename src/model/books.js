@@ -1,27 +1,32 @@
 export const bestSellersData = [
   {
     id: 1,
-    title: "The Midnight Library",
-    author: "Matt Haig",
-    cover: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+    title: "Grokking Algorithms",
+    author: "Aditya Y. Bhargava",
+    cover: "https://skybooks.ir/images/productImages/Grokking-Algorithms_EB1709675048.jpg",
     price: 24.99,
-    rating: 4.5,
+    rating: 5,
     category: "fiction",
     discount: 15,
-    ISBN:"9783642152597",
-    paperback:400,
+    ISBN:"9781633438538",
+    paperback:322,
     year:2012,
     edition:2,
-    descripation:"A friendly, fully-illustrated introduction to the most important computer programming algorithms.Master the most widely used algorithms and be fully prepared when you’re asked about them at your next job interview. With beautifully simple explanations, over 400 fun illustrations, and dozens of relevant examples, you’ll actually enjoy learning about algorithms with this fun and friendly guide! The first edition of Grokking Algorithms proved to over 100,000 readers that learning algorithms doesn't have to be complicated or boring! This revised second edition contains brand new coverage of trees, including binary search trees, balanced trees, B-trees and more. You’ll also discover fresh insights on data structure performance that takes account of modern CPUs. Plus, the book’s fully annotated code samples have been updated to Python 3.Foreword by Daniel Zingaro."
+    descripation:"An Illustrated Guide for Programmers and Other Curious People  A friendly, fully-illustrated introduction to the most important computer programming algorithms.Master the most widely used algorithms and be fully prepared when you’re asked about them at your next job interview. With beautifully simple explanations, over 400 fun illustrations, and dozens of relevant examples, you’ll actually enjoy learning about algorithms with this fun and friendly guide! The first edition of Grokking Algorithms proved to over 100,000 readers that learning algorithms doesn't have to be complicated or boring! This revised second edition contains brand new coverage of trees, including binary search trees, balanced trees, B-trees and more. You’ll also discover fresh insights on data structure performance that takes account of modern CPUs. Plus, the book’s fully annotated code samples have been updated to Python 3.Foreword by Daniel Zingaro."
   },
   {
     id: 2,
-    title: "Atomic Habits",
-    author: "James Clear",
-    cover: "https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
-    price: 19.99,
+    title: "Grokking Bitcoin",
+    author: "Kalle Rosenbaum",
+    cover: "https://skybooks.ir/images/productImages/GrokkingBitcoin1_Rs1657377051.jpg",
+    price: 24.99,
     rating: 4.8,
-    category: "non-fiction"
+    category: "non-fiction",
+    ISBN:"9781617294648",
+    paperback:480,
+    year:2019,
+    edition:1,
+    descripation:"If you think Bitcoin is just an alternative currency for geeks, it's time to think again. Grokking Bitcoin opens up this powerful distributed ledger system, exploring the technology that enables applications both for Bitcoin-based financial transactions and using the blockchain for registering physical property ownership. With this fully illustrated, easy-to-read guide, you'll finally understand how Bitcoin works, how you can use it, and why you can trust the blockchain.Foreword by David A. Harding,Contributor to Bitcoin documentation.About the TechnologyInflation, depressed economies, debased currencies ... these are just a few of the problems centralized banking has caused throughout history."
   },
   {
     id: 3,

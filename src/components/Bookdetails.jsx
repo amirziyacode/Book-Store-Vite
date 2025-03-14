@@ -40,7 +40,7 @@ function Bookdetails(){
                         <p>{book.discount}%</p>
                     </div>
                 )}
-                <div style={{display:"flex",alignItems:"center",height:"50px"}}>
+                <div style={{display:"flex",alignItems:"center",height:"70px"}}>
                     <FaQrcode style={{padding:"5px"}} />
                     <p>ISBN : {book.ISBN}</p>
                 </div>
@@ -48,11 +48,11 @@ function Bookdetails(){
                     <FaCalendar style={{padding:"5px"}}/>
                     <p>year : {book.year}</p>
                 </div>
-                <div style={{display:"flex",alignItems:"center",height:"30px"}}>
+                <div style={{display:"flex",alignItems:"center",height:"40px"}}>
                     <FaBook style={{padding:"5px"}} />
                     <p> Pages : {book.paperback}</p>
                 </div>
-                <div style={{display:"flex",alignItems:"center",paddingBottom:"10px"}}>
+                <div style={{display:"flex",alignItems:"center"}}>
                     <RxUpdate style={{padding:"5px"}} />
                     <p>Edition : {book.edition}</p>
                 </div>
