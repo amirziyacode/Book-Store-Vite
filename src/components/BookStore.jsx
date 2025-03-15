@@ -7,10 +7,10 @@ import { useNavigate } from 'react-router-dom';
 function Bookstore(){
    const navigate = useNavigate();
     const [activeCategory, setActiveCategory] = useState('all');
-    const categories = ['all', 'fiction', 'non-fiction', 'mystery', 'sci-fi', 'romance'];
+    const categories = ['all', 'biography', 'Personal development', 'cryptography', 'computer science', 'programming languages'];
   
     const filteredBooks = activeCategory === 'all' 
-      ? bestSellersData 
+      ? bestSellersData
       : bestSellersData.filter(book => book.category === activeCategory);
 
     return(
