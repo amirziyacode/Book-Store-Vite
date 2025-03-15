@@ -40,11 +40,11 @@ function Bookdetails(){
                         <p>{book.discount}%</p>
                     </div>
                 )}
-                <div style={{display:"flex",alignItems:"center",height:"70px"}}>
+                <div style={{display:"flex",alignItems:"center",height:"65px"}}>
                     <FaQrcode style={{padding:"5px"}} />
                     <p>ISBN : {book.ISBN}</p>
                 </div>
-                <div style={{display:"flex",alignItems:"center",height:"40px"}}>
+                <div style={{display:"flex",alignItems:"center",height:"50px"}}>
                     <FaCalendar style={{padding:"5px"}}/>
                     <p>year : {book.year}</p>
                 </div>

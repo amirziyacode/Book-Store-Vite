@@ -15,7 +15,7 @@ const  BookCard = ({book}) => {
                 {discount}% OFF
             </div>
             )}
-            <p className="title-card">{title}</p>
+            <p className="title-card" >{title}</p>
             <p className="author">{author}</p>
             <div className="stars-rating">
             {[...Array(5)].map((_, i) => (
