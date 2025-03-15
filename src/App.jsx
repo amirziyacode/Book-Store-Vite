@@ -7,6 +7,7 @@ import Bookdetails from './components/Bookdetails';
 import Bookstore from './components/BookStore';
 import Aboutus from './components/Aboutus';
 import Contactus from './components/Contactus';
+import MyAccount from './components/MyAccout';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/BookStroes' element={<Bookstore/>}/>
           <Route path='/About Us' element={<Aboutus/>}/>
           <Route path="/Contact us" element={<Contactus/>}/>
+          <Route path='/Account' element={<MyAccount/>}/>
           <Route index element={<Home/>} />
         </Route>
       </Routes>

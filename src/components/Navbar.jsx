@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 function NavBar(){
     const navigate = useNavigate();
-    const nav_button = ["BookStroes","Shop","About Us","Contact us"];
+    const nav_button = ["Account","BookStroes","About Us","Contact us"];
     const [navchange,setNavchange] = useState('');
 
     return (
