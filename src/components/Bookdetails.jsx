@@ -62,7 +62,7 @@ function Bookdetails(){
             </div>
             </div>
             <div className="price-buy">
-                <div style={{display:"flex",justifyContent:"space-between",marginLeft:"10px"}}>
+                <div className="remove-add-book">
                         {book.discount ? (
                             <div className="prices-discount">
                             <span style={{color:"#9ca3af",textDecoration:"line-through",fontSize:"27px",marginRight:"15px",padding:"10px"}}>${book.price.toFixed(2)}</span>
@@ -73,7 +73,7 @@ function Bookdetails(){
                         ):(
                             <span style={{fontWeight:"bold",fontSize:"25px",padding:'20px',color:"#4F46E5"}}>${book.price.toFixed(2)}</span>
                         )}
-                    <div style={{display:"flex",flexDirection:"row",alignItems:"center"}}>
+                    <div style={{display:"flex",flexDirection:"row",alignItems:"center",border:"soild 1px black"}}>
                         <IoIosRemoveCircleOutline onClick={remBook} style={{width:"40px",height:"40px",color:"red"}} />
                         <p style={{padding:"10px",fontSize:"20px"}}>{counter.toString()}</p>
                         <IoIosAddCircleOutline onClick={addBook} style={{width:"40px",height:"40px",color:"green"}} />
