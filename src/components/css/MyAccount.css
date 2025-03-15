@@ -1,0 +1,31 @@
+.profile{
+    padding-top: 30px;
+    position: relative;
+}
+.options-accounts{
+    width: 17%;
+    height: 50rem;
+    align-items: center;
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    flex-direction: column;
+    padding: 10px;   
+}
+.my-account , .my-message , .my-order , .log-out{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    padding: 15px;
+}
+.my-order-icon,.my-account-icon,.my-message-icon,.log-out-icon{
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin-right:10px;
+}
+.my-order{
+    margin-right: 20px;
+}
+.log-out{
+    margin-right: 30px;
+}
