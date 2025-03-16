@@ -66,6 +66,10 @@ export const bestSellersData = [
     rating: 4.4,
     category: "programming languages",
     discount: 20,
+    ISBN:"9781617294556",
+    paperback:457,
+    year:2021,
+    edition:1,
     descripation:"Systems programming concepts and techniques Rust in Action is a hands-on guide to systems programming with Rust. Written for inquisitive programmers, it presents real-world use cases that go far beyond syntax and structure.  Summary :Rust in Action introduces the Rust programming language by exploring numerous systems programming concepts and techniques. You'll be learning Rust by delving into how computers work under the hood. You'll find yourself playing with persistent storage, memory, networking and even tinkering with CPU instructions. The book takes you through using Rust to extend other applications and teaches you tricks to write blindingly fast code. You'll also discover parallel and concurrent programming. Filled to the brim with real-life use cases and scenarios, you'll go beyond the Rust syntax and see what Rust has to offer in real-world use cases."
   },
   {
@@ -89,10 +93,7 @@ export const bestSellersData = [
     cover: "https://skybooks.ir/images/productImages/Spring-Boot-in-Action_XD1659195012.jpg",
     price: 24.99,
     rating: 4.2,
-    ISBN:"9781617292545",
-    paperback:382,
-    year:2016,
-    edition:1,
+
     category: "programming languages",
     descripation:"A developer-focused guide to writing applications using Spring Boot. You'll learn how to bypass the tedious configuration steps so that you can concentrate on your application's behavior.  The Spring Framework simplifies enterprise Java development, but it does require lots of tedious configuration work. Spring Boot radically streamlines spinning up a Spring application. You get automatic configuration and a model with established conventions for build-time and runtime dependencies. You also get a handy command-line interface you can use to write scripts in Groovy. Developers who use Spring Boot often say that they can't imagine going back to hand configuring their applications.About the Book  "
   },
@@ -103,6 +104,7 @@ export const bestSellersData = [
     cover: "https://skybooks.ir/images/productImages/CleanArchitecture_1e1655814220.jpg",
     price: 29.99,
     rating: 4.1,
+
     descripation:"A Craftsman's Guide to Software Structure and Design  By applying universal rules of software architecture, you can dramatically improve developer productivity throughout the life of any software system. Now, building upon the success of his best-selling books Clean Code and The Clean Coder, legendary software craftsman Robert C. Martin (“Uncle Bob”) reveals those rules and helps you apply them.Martin’s Clean Architecture doesn’t merely present options. Drawing on over a half-century of experience in software environments of every imaginable type, Martin tells you what choices to make and why they are critical to your success. As you’ve come to expect from Uncle Bob, this book is packed with direct, no-nonsense solutions for the real challenges you’ll face–the ones that will make or break your projects.",
     category: "computer science"
   },
@@ -138,7 +140,10 @@ export const bestSellersData = [
     rating: 4.5,
     category: "Personal development",
     discount: 10,    
-
+    ISBN:"9781544512280",
+    paperback:297,
+    year:2018,
+    edition:1,
     descripation:"For David Goggins, childhood was a nightmare -- poverty, prejudice, and physical abuse colored his days and haunted his nights. But through self-discipline, mental toughness, and hard work, Goggins transformed himself from a depressed, overweight young man with no future into a U.S. Armed Forces icon and one of the world's top endurance athletes. The only man in history to complete elite training as a Navy SEAL, Army Ranger, and Air Force Tactical Air Controller, he went on to set records in numerous endurance events, inspiring Outside magazine to name him The Fittest (Real) Man in America"
   },
   {
