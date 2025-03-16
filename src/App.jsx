@@ -8,6 +8,8 @@ import Bookstore from './components/BookStore';
 import Aboutus from './components/Aboutus';
 import Contactus from './components/Contactus';
 import Profile from './components/myAccount/Profile';
+import MyOrder from './components/myAccount/Order';
+import MyMessage from './components/myAccount/Message';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path='/About Us' element={<Aboutus/>}/>
           <Route path="/Contact us" element={<Contactus/>}/>
           <Route path='/Account' element={<Profile/>}/>
+          <Route path='/Account/Order' element={<MyOrder/>}/>
+          <Route path='/Account/Message' element={<MyMessage/>}/>
           <Route index element={<Home/>} />
         </Route>
       </Routes>

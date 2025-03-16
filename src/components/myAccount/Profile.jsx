@@ -6,8 +6,21 @@ function Profile() {
     return(
         <>
         <div className="my-accout">
-            <NavbarAccount/> 
-            <h2>MyProfile</h2>
+            <NavbarAccount currentState={"my-account"}/> 
+            <div className="account">
+                <p className="title-profile">My Account</p>
+                <div className="inputs-button">
+                <div className="input-update">
+                        <input className="input-account" type="text" placeholder="Firstname"/>
+                        <input className="input-account" type="text" placeholder="Lastname"/>
+                    </div>
+                    <div className="input-update">
+                        <input className="input-account" type="email" placeholder="Email"/>
+                        <input className="input-account" type="password" placeholder="Password"/>
+                    </div>
+                    <button className="update-account">Update Account</button>
+                </div>
+            </div>
         </div>
         </>
     )

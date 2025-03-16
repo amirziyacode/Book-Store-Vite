@@ -1,5 +1,28 @@
 .my-accout{
     display: flex;
     flex-direction: row;
-    
+}
+.title-profile{
+    padding: 5px;
+    margin-left: 1.5%;
+    font-size: 35px;
+}
+.account{
+    padding: 15px;
+    margin-left: 15px;
+}
+.input-update{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.input-account{
+    width: 350px;
+    height: 25px;
+}
+
+.update-account{
+    width: 180px;
+    border-radius: 10px;
+    margin-left: 20px;
 }
