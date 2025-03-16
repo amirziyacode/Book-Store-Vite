@@ -7,7 +7,7 @@ import Bookdetails from './components/Bookdetails';
 import Bookstore from './components/BookStore';
 import Aboutus from './components/Aboutus';
 import Contactus from './components/Contactus';
-import MyAccount from './components/MyAccout';
+import Profile from './components/myAccount/Profile';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           <Route path='/BookStroes' element={<Bookstore/>}/>
           <Route path='/About Us' element={<Aboutus/>}/>
           <Route path="/Contact us" element={<Contactus/>}/>
-          <Route path='/Account' element={<MyAccount/>}/>
+          <Route path='/Account' element={<Profile/>}/>
           <Route index element={<Home/>} />
         </Route>
       </Routes>

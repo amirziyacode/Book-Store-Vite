@@ -1,15 +1,18 @@
 
 import { FaUserCircle ,FaShoppingCart} from "react-icons/fa";
-import { CiShoppingCart} from "react-icons/ci";
-import "./css/MyAccount.css"
+import "./css/Navbar-Account.css"
 import { MdMessage ,MdOutlineLogout} from "react-icons/md";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-function MyAccount(){
+function NavbarAccount(){
+    const myIcons = ["my-account","my-order","my-message","log-out"]
+    const[selectIcon,setSelecetIcon] = useState("my-account");
+    const navigate = useNavigate();
     return(
         <>
-            <div className="profile">
                 <div className="options-accounts">
-                    <div className="my-account">
+                    <div className="my-account" onClick={() => navigate("/Account")}>
                         <FaUserCircle className="my-account-icon" />
                         <p>My Account</p>
                     </div>
@@ -26,9 +29,8 @@ function MyAccount(){
                         <p>Log Out</p>
                     </div>
                 </div>
-            </div>
         </>
     )
 }
 
-export default MyAccount;
+export default NavbarAccount;
