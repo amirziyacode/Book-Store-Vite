@@ -6,29 +6,46 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function NavbarAccount(){
-    const myIcons = ["my-account","my-order","my-message","log-out"]
+    const options = [
+        {
+          divclass:"my-account",
+          navigate:"/Account",
+          name:"My Account",
+          icon:<FaUserCircle className="my-account-icon"/>
+        },
+        {
+            divclass:"my-order",
+            navigate:"/Account",
+            icon:<FaShoppingCart className="my-order-icon"/>,
+            name:"My Order" 
+        },
+        {
+            divclass:"my-message",
+            navigate:"/Account",
+            icon:<MdMessage className="my-message-icon"/>,
+            name:"My Message"  
+        },
+        {
+            divclass:"log-out",
+            navigate:"/Account",
+            icon:<MdOutlineLogout className="log-out-icon"/>,
+            name:"Log Out"  
+        },
+    ]
     const[selectIcon,setSelecetIcon] = useState("my-account");
     const navigate = useNavigate();
     return(
         <>
-                <div className="options-accounts">
-                    <div className="my-account" onClick={() => navigate("/Account")}>
-                        <FaUserCircle className="my-account-icon" />
-                        <p>My Account</p>
-                    </div>
-                    <div className="my-order">
-                        <FaShoppingCart className="my-order-icon" />
-                        <p>My Order</p>
-                    </div>
-                    <div className="my-message">
-                        <MdMessage  className="my-message-icon"/>
-                        <p>My Message</p>
-                    </div>
-                    <div className="log-out">
-                        <MdOutlineLogout className="log-out-icon"/>
-                        <p>Log Out</p>
-                    </div>
-                </div>
+            <div className="options-accounts">
+                {
+                    options.map(opt => (
+                        <div key={opt} className={opt.divclass}onClick={() => setSelecetIcon(opt.divclass)} style={selectIcon === opt.divclass ? {color:"red"}: {color:"black"}}>
+                            {opt.icon}
+                            <p>{opt.name}</p>
+                        </div>
+                    ))
+                }
+            </div>
         </>
     )
 }

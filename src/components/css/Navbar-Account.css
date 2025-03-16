@@ -25,3 +25,6 @@
 .log-out{
     margin-right: 30px;
 }
+.my-account:hover , .my-message:hover , .my-order:hover , .log-out:hover{
+    cursor: pointer;
+}
