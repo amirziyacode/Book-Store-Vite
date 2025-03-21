@@ -93,7 +93,11 @@ export const bestSellersData = [
     cover: "https://skybooks.ir/images/productImages/Spring-Boot-in-Action_XD1659195012.jpg",
     price: 24.99,
     rating: 4.2,
-
+    year:2016,
+    ISBN:"9781617292545",
+    paperback:266,
+    year:2016,
+    edition:1,
     category: "programming languages",
     descripation:"A developer-focused guide to writing applications using Spring Boot. You'll learn how to bypass the tedious configuration steps so that you can concentrate on your application's behavior.  The Spring Framework simplifies enterprise Java development, but it does require lots of tedious configuration work. Spring Boot radically streamlines spinning up a Spring application. You get automatic configuration and a model with established conventions for build-time and runtime dependencies. You also get a handy command-line interface you can use to write scripts in Groovy. Developers who use Spring Boot often say that they can't imagine going back to hand configuring their applications.About the Book  "
   },
@@ -104,7 +108,11 @@ export const bestSellersData = [
     cover: "https://skybooks.ir/images/productImages/CleanArchitecture_1e1655814220.jpg",
     price: 29.99,
     rating: 4.1,
-
+    year:2016,
+    ISBN:"9780134494166",
+    paperback:429,
+    year:2018,
+    edition:1,
     descripation:"A Craftsman's Guide to Software Structure and Design  By applying universal rules of software architecture, you can dramatically improve developer productivity throughout the life of any software system. Now, building upon the success of his best-selling books Clean Code and The Clean Coder, legendary software craftsman Robert C. Martin (“Uncle Bob”) reveals those rules and helps you apply them.Martin’s Clean Architecture doesn’t merely present options. Drawing on over a half-century of experience in software environments of every imaginable type, Martin tells you what choices to make and why they are critical to your success. As you’ve come to expect from Uncle Bob, this book is packed with direct, no-nonsense solutions for the real challenges you’ll face–the ones that will make or break your projects.",
     category: "computer science"
   },
@@ -117,7 +125,10 @@ export const bestSellersData = [
     rating: 4.3,
     category: "biography",
     discount: 5,
-
+    year:2022,
+    ISBN:"9781250866448",
+    paperback:280,
+    edition:1,
     descripation:"The BELOVED STAR OF FRIENDS takes us behind the scenes of the hit sitcom and his struggles with addiction in this “CANDID, DARKLY FUNNY...POIGNANT” memoir (The New York Times)A MOST ANTICIPATED BOOK by Time, Associated Press, Goodreads, USA Today, and more!“Hi, my name is Matthew, although you may know me by another name. My friends call me Matty. And I should be dead.”So begins the riveting story of acclaimed actor Matthew Perry, taking us along on his journey from childhood ambition to fame to addiction and recovery in the aftermath of a life-threatening health scare. Before the frequent hospital visits and stints in rehab, there was five-year-old Matthew, who traveled from Montreal to Los Angeles, shuffling between his separated parents; fourteen-year-old Matthew, who was a nationally ranked tennis star in Canada; twenty-four-year-old Matthew, who nabbed a coveted role as a lead cast member on the talked-about pilot then called Friends Like Us. . . and so much more."
   },
   {
@@ -128,7 +139,10 @@ export const bestSellersData = [
     price: 19.99,
     rating: 4.8,
     category: "Personal development",
-
+    year:2018,
+    ISBN:"9780735211292",
+    paperback:320,
+    edition:1,
     descripation:"An Easy & Proven Way to Build Good Habits & Break Bad Ones Tiny Changes, Remarkable Results No matter your goals, Atomic Habits offers a proven framework for improving--every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.If you're having trouble changing your habits, the problem isn't you. The problem is your system. Bad habits repeat themselves again and again not because you don't want to change, but because you have the wrong system for change. You do not rise to the level of your goals. You fall to the level of your systems. Here, you'll get a proven system that can take you to new heights."
   },
   {
