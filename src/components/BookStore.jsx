@@ -1,17 +1,30 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import BookCard from './BookCard';
-import { bestSellersData } from '../model/books';
 import "./css/BookStore.css";
 import { useNavigate } from 'react-router-dom';
+import axios, { all } from 'axios';
 
 function Bookstore(){
    const navigate = useNavigate();
     const [activeCategory, setActiveCategory] = useState('all');
-    const categories = ['all', 'biography', 'Personal development', 'cryptography', 'computer science', 'programming languages'];
-  
+    const categories = ['all', 'BIOGRAPHY', 'MOTIVATION', 'CRYPTOGRAPHY', 'COMPUTER_SCIENCE','LANGUAGE'];
+    const [allBooks,setAllBooks] = useState([]);
+    
+    useEffect(() => {
+        const getAllBooks = async() => {
+            try{
+                const allBooks = (await axios.get("http://localhost:8080/api/book/allBooks")).data;
+                setAllBooks(allBooks);
+            }catch(error){
+                console.error('Error fetching books:', error);
+            }
+         }
+        getAllBooks();
+    },[]);
+
     const filteredBooks = activeCategory === 'all' 
-      ? bestSellersData
-      : bestSellersData.filter(book => book.category === activeCategory);
+      ? allBooks
+      : allBooks.filter(book => book.category === activeCategory);
 
     return(
         <>
@@ -43,8 +56,8 @@ function Bookstore(){
                             <BookCard key={book.id} book={book} />
                         </div>
                         </>
-                        ))}
-                </div>
+                    ))}
+            </div>
         </div>
         </>
     )

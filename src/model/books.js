@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export const bestSellersData = [
   {
     id: 1,
@@ -175,3 +177,13 @@ export const bestSellersData = [
     descripation:"Cal Newport discusses in his new book, Deep Work: Rules For Focused Success In A Distracted World, about how professionals of today have started valuing quantity over quality; and how this has turned young professionals of today into puppets who try to indulge in extensive multitasking, dealing with multiple emails and projects. This prevents them from doing 'deep work'; which is focused work free from all other distractions. This also means that the professionals of today should sort out their priorities. Newport uses principles of psychology and neuroscience to enhance his points. He elaborates how to improve a person's cognitive abilities and how employers should encourage workers to not take shortcuts for completing projects. He claims that the best way to break away from the corporate race is to take a break from technology and social media and use some alone-time to rewind and introspect. Newport enforces the beliefs of a non-technophile to deliver work that is productive and efficiently delivered."
   }
 ];
+
+export const getAllBooks = async() => {
+  try{
+    Apibooks = (await axios.get("http://localhost:8080/api/book/allBooks")).data
+    console.log(Apibooks)
+  }catch(error){
+    console.log(error)
+  }
+}
+

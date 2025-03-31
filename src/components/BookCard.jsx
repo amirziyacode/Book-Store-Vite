@@ -10,7 +10,7 @@ const  BookCard = ({book}) => {
             <img 
             src={cover} 
             alt={title} />
-            {discount && (
+            {discount != 0 && (
             <div className="discout-tag">
                 {discount}% OFF
             </div>
@@ -29,7 +29,7 @@ const  BookCard = ({book}) => {
             </div>
             <div className="price">
                 <div>
-                    {discount ? (
+                    {discount  ? (
                         <div className="prices-discount">
                         <span style={{color:"#9ca3af",textDecoration:"line-through",fontSize:"0.9rem",marginRight:"10px"}}>${price.toFixed(2)}</span>
                         <span style={{color:'#4F46E5',fontWeight:"bold",fontSize:"18px"}}>
