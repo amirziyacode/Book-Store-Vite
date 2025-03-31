@@ -42,7 +42,7 @@ function Bookdetails(){
                 )}
                 <div style={{display:"flex",alignItems:"center",height:"65px"}}>
                     <FaQrcode style={{padding:"5px"}} />
-                    <p>ISBN : {book.ISBN}</p>
+                    <p>ISBN : {book.isbn}</p>
                 </div>
                 <div style={{display:"flex",alignItems:"center",height:"50px"}}>
                     <FaCalendar style={{padding:"5px"}}/>
@@ -90,7 +90,7 @@ function Bookdetails(){
                 <p style={{marginLeft:"15px",color:"white",}}>Preface</p> 
             </div>
             <div className="about-book">
-                <p style={{letterSpacing:'1px',wordSpacing:"1px",fontSize:"18px"}}>{book.descripation}</p>    
+                <p style={{letterSpacing:'1px',wordSpacing:"1px",fontSize:"18px"}}>{book.description}</p>    
             </div>    
         </div>
         </>

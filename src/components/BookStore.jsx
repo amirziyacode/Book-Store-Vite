@@ -1,17 +1,28 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import BookCard from './BookCard';
-import { bestSellersData } from '../model/books';
 import "./css/BookStore.css";
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 function Bookstore(){
    const navigate = useNavigate();
     const [activeCategory, setActiveCategory] = useState('all');
     const categories = ['all', 'biography', 'Personal development', 'cryptography', 'computer science', 'programming languages'];
-  
+    const [allBooks,setAllBooks] = useState([]);
+    
+    useEffect(() => {
+        getAllBooks();
+    });
+
+    const getAllBooks = async() => {
+       const allBooks = (await axios.get("http://localhost:8080/api/book/allBooks")).data;
+       setAllBooks(allBooks);
+      }
+    
+    // not working  now 
     const filteredBooks = activeCategory === 'all' 
-      ? bestSellersData
-      : bestSellersData.filter(book => book.category === activeCategory);
+      ? allBooks
+      : allBooks.filter(book => book.category === activeCategory);
 
     return(
         <>
@@ -43,8 +54,8 @@ function Bookstore(){
                             <BookCard key={book.id} book={book} />
                         </div>
                         </>
-                        ))}
-                </div>
+                    ))}
+            </div>
         </div>
         </>
     )

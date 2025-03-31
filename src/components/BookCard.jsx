@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FiStar,FiShoppingCart} from 'react-icons/fi';
 import "./css/BookCard.css"
 
