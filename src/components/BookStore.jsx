@@ -2,24 +2,26 @@ import { useEffect, useState } from 'react';
 import BookCard from './BookCard';
 import "./css/BookStore.css";
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import axios, { all } from 'axios';
 
 function Bookstore(){
    const navigate = useNavigate();
     const [activeCategory, setActiveCategory] = useState('all');
-    const categories = ['all', 'biography', 'Personal development', 'cryptography', 'computer science', 'programming languages'];
+    const categories = ['all', 'BIOGRAPHY', 'MOTIVATION', 'CRYPTOGRAPHY', 'COMPUTER_SCIENCE','LANGUAGE'];
     const [allBooks,setAllBooks] = useState([]);
     
     useEffect(() => {
+        const getAllBooks = async() => {
+            try{
+                const allBooks = (await axios.get("http://localhost:8080/api/book/allBooks")).data;
+                setAllBooks(allBooks);
+            }catch(error){
+                console.error('Error fetching books:', error);
+            }
+         }
         getAllBooks();
-    });
+    },[]);
 
-    const getAllBooks = async() => {
-       const allBooks = (await axios.get("http://localhost:8080/api/book/allBooks")).data;
-       setAllBooks(allBooks);
-      }
-    
-    // not working  now 
     const filteredBooks = activeCategory === 'all' 
       ? allBooks
       : allBooks.filter(book => book.category === activeCategory);

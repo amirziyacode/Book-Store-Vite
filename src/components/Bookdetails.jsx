@@ -34,7 +34,7 @@ function Bookdetails(){
                 <div>
                     <p style={{fontSize:"23px",fontWeight:"bold",marginBottom:"10px"}}>{book.title}</p>
                     <p style={{color:'gray',width:"100px",marginBottom:"3px"}}>{book.author}</p>
-                    {book.discount && (
+                    {book.discount != 0 && (
                         <div style={{alignItems:"center",display:"flex",height:"40px",marginTop:"15px",color:" #F59E0B"}}>
                         <CiDiscount1 style={{width:"25px",height:"25px"}}/> 
                         <p>{book.discount}%</p>
