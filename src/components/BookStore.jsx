@@ -2,18 +2,21 @@ import { useEffect, useState } from 'react';
 import BookCard from './BookCard';
 import "./css/BookStore.css";
 import { useNavigate } from 'react-router-dom';
-import axios, { all } from 'axios';
+import axios from 'axios';
+import LoadingSpinner from './LoadingSpinner';
 
 function Bookstore(){
    const navigate = useNavigate();
     const [activeCategory, setActiveCategory] = useState('all');
     const categories = ['all', 'BIOGRAPHY', 'MOTIVATION', 'CRYPTOGRAPHY', 'COMPUTER_SCIENCE','LANGUAGE'];
+    const [loading,setLoading] = useState(true);
     const [allBooks,setAllBooks] = useState([]);
     
     useEffect(() => {
         const getAllBooks = async() => {
             try{
                 const allBooks = (await axios.get("http://localhost:8080/api/book/allBooks")).data;
+                setLoading(false);
                 setAllBooks(allBooks);
             }catch(error){
                 console.error('Error fetching books:', error);
@@ -25,7 +28,6 @@ function Bookstore(){
     const filteredBooks = activeCategory === 'all' 
       ? allBooks
       : allBooks.filter(book => book.category === activeCategory);
-
     return(
         <>
         <div className="container-books">
@@ -49,15 +51,19 @@ function Bookstore(){
                 ))}
                 </div>
             </div>
-            <div className="books">
+            {
+               loading === true ? <LoadingSpinner/> :  
+                    <div className="books">
                     {filteredBooks.map(book => (
                         <>
                         <div onClick={() => navigate("/bookDetails",{state : {book : book}})}>
                             <BookCard key={book.id} book={book} />
                         </div>
                         </>
-                    ))}
-            </div>
+                            ))}
+                    </div>
+            }
+           
         </div>
         </>
     )
