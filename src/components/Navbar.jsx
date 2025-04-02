@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./css/navbar.css";
 import { useNavigate } from 'react-router-dom';
+import { AiOutlineShoppingCart } from "react-icons/ai";
 
 function NavBar(){
     const navigate = useNavigate();
@@ -22,7 +23,8 @@ function NavBar(){
                     </li>
                 ))}
             </ul>
-            <button class="btn-outline" onClick={() => {setNavchange(''),navigate('/SingUp')}}><p class="text-btn">Sing Up</p></button>
+            <AiOutlineShoppingCart className="shop-icon"/>
+            <button class="btn-outline-signUp" onClick={() => {setNavchange(''),navigate('/SingUp')}}><p class="text-btn">Sing Up</p></button>
         </div>
         </>
     )
